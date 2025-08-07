@@ -36,7 +36,7 @@ M.run_lines = req('attempt.interface', 'run_lines')
 
 M.open_select = req('attempt.interface', 'open_select')
 
-M.select_extension = req('attempt.interface', 'select_extension')
+M.open_extension_select = req('attempt.interface', 'open_extension_select')
 
 M.delete = req('attempt.interface', 'delete')
 

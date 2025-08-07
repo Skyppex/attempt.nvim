@@ -116,8 +116,10 @@ function M.open_select(cb)
   end)
 end
 
-function M.select_extension(cb)
-  vim.notify("TODO: implement select_extension")
+function M.open_extension_select(cb)
+  vim.ui.select(config.opts.ext_options, {
+    prompt = "Select extension",
+  }, cb)
 end
 
 function M.delete(path, cb)

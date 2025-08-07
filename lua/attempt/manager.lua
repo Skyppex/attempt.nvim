@@ -70,7 +70,6 @@ function M.new_tmp(opts, cb)
     ext = opts.ext,
     initial_content = opts.initial_content
   }, function(file_entry)
-    vim.notify(vim.inspect(file_entry))
     vim.schedule(function()
       local bufnr = vim.api.nvim_create_buf(false, true)
       vim.api.nvim_buf_set_name(bufnr, file_entry.path)

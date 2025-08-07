@@ -79,7 +79,7 @@ function M.run_lines(lines, ext, cb)
         vim.cmd(cmd)
       end
     elseif type(run_cmds) == 'string' then
-        vim.cmd(run_cmds)
+      vim.cmd(run_cmds)
     else
       run_cmds(ext, bufnr)
     end
